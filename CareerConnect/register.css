@@ -1,0 +1,425 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f0f6ff;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e9f0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-logo-img {
+  height: 35px;
+  width: auto;
+  object-fit: contain;
+}
+
+.logo h2 {
+  font-size: 20px;
+  color: #1e293b;
+}
+
+.logo h2 span {
+  color: #2563eb;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #475569;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.nav-links a:hover {
+  color: #2563eb;
+}
+
+.btn-register-nav {
+  background-color: #1e3a8a;
+  color: #fff !important;
+  padding: 8px 18px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+/* Container */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.register-card {
+  display: flex;
+  background: #ffffff;
+  width: 100%;
+  max-width: 1000px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+  overflow: hidden;
+}
+
+/* Left Section - Adjusted to bring content up */
+.left-section {
+  flex: 1.1;
+  background-color: #f4f8ff;
+  padding: 25px 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.small-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.hero-logo-img {
+  height: 30px;
+  width: auto;
+  object-fit: contain;
+}
+
+.small-logo h3 {
+  font-size: 15px;
+  color: #0f172a;
+}
+
+.small-logo h3 span {
+  color: #2563eb;
+}
+
+.small-logo p {
+  font-size: 11px;
+  color: #64748b;
+}
+
+.welcome-text {
+  margin-top: 5px;
+}
+
+.welcome-text h1 {
+  font-size: 24px;
+  color: #1e293b;
+  margin-bottom: 4px;
+}
+
+.welcome-text h1 span {
+  color: #2563eb;
+}
+
+.welcome-text p {
+  font-size: 13px;
+  color: #64748b;
+  line-height: 1.4;
+}
+
+.hero-img {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.hero-img img {
+  max-width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+}
+
+.features-footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #e2e8f0;
+  padding-top: 15px;
+  margin-top: 5px;
+}
+
+.feature-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 6px;
+  width: 30%;
+}
+
+.feature-item i {
+  color: #2563eb;
+  font-size: 15px;
+}
+
+.feature-item span {
+  font-size: 11px;
+  font-weight: 600;
+  color: #475569;
+}
+
+/* Right Section */
+.right-section {
+  flex: 1;
+  padding: 40px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-header {
+  margin-bottom: 20px;
+}
+
+.form-header h2 {
+  font-size: 30px;
+  color: #0f172a;
+  margin-bottom: 4px;
+}
+
+.form-header p {
+  font-size: 14px;
+  color: #64748b;
+}
+
+/* Form Controls */
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.input-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-icon {
+  position: absolute;
+  left: 14px;
+  color: #94a3b8;
+  font-size: 15px;
+}
+
+.toggle-password, .select-arrow {
+  position: absolute;
+  right: 14px;
+  color: #94a3b8;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.input-group input,
+.input-group select {
+  width: 100%;
+  padding: 11px 40px 11px 42px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #334155;
+  outline: none;
+  background: #ffffff;
+  transition: border-color 0.2s;
+}
+
+.input-group select {
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+  border-color: #2563eb;
+}
+
+/* Terms Checkbox */
+.terms-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: #475569;
+  margin-top: 2px;
+}
+
+.terms-group input {
+  accent-color: #2563eb;
+  width: 15px;
+  height: 15px;
+}
+
+.terms-group a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Submit Button */
+.btn-submit {
+  width: 100%;
+  padding: 11px;
+  background-color: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 4px;
+  transition: background-color 0.2s;
+}
+
+.btn-submit:hover {
+  background-color: #1d4ed8;
+}
+
+/* Divider & Footer */
+.divider {
+  text-align: center;
+  border-bottom: 1px solid #e2e8f0;
+  line-height: 0.1em;
+  margin: 18px 0;
+}
+
+.divider span {
+  background: #fff;
+  padding: 0 10px;
+  color: #94a3b8;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.login-prompt {
+  text-align: center;
+  font-size: 13px;
+  color: #64748b;
+}
+
+.login-prompt a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Responsive View */
+@media (max-width: 850px) {
+  .register-card {
+    flex-direction: column;
+  }
+  .left-section {
+    display: none;
+  }
+  .right-section {
+    padding: 30px 20px;
+  }
+}
+/* Features Footer - Demo layout with vertical divider lines */
+.features-footer {
+  border-top: none !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  margin-top: auto;
+}
+
+.feature-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+  position: relative;
+  padding: 0 10px;
+}
+
+/* মাঝখানের খাড়া বর্ডার (Vertical Border Lines) তৈরি করার জন্য */
+.feature-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 15%;
+  height: 70%;
+  width: 1px;
+  background-color: #cbd5e1; /* হালকা ছাই বর্ডার কালার */
+}
+
+.feature-item i {
+  color: #2563eb;
+  font-size: 20px;
+}
+
+.feature-item span {
+  font-size: 13px;
+  font-weight: 700;
+  color: #475569;
+  line-height: 1.2;
+  max-width: 110px; /* লেখা দুই লাইনে ফ্লেক্স করার জন্য */
+  display: inline-block;
+}
+/* Left Section & Features Footer Content Elevation */
+.left-section {
+  justify-content: flex-start !important;
+  gap: 15px !important;
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+}
+
+.hero-img {
+  margin: 5px 0 !important;
+}
+
+.hero-img img {
+  max-height: 170px !important; /* ছবির সাইজ কিছুটা কমালে ফিচার আইটেমগুলো ওপরের দিকে উঠে আসবে */
+}
+
+.features-footer {
+  margin-top: 10px !important; /* নীচ থেকে ওপরে তোলার জন্য gap কমানো হলো */
+}
+/* Balance Left Section Spacing */
+.left-section {
+  justify-content: space-between !important;
+  padding: 30px 40px !important;
+}
+
+.hero-img {
+  margin: 15px 0 !important;
+}
+
+.hero-img img {
+  max-height: 200px !important; /* ছবির সাইজ মিডিয়াম করা হলো */
+}
+
+.features-footer {
+  margin-top: 15px !important; /* ফিচার সেকশনটি পারফেক্ট পজিশনে নামানো হলো */
+  padding-top: 15px !important;
+}

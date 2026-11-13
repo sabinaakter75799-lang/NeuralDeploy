@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerConnect - Browse Jobs</title>
+
+    <link rel="stylesheet" href="Browse.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<div class="main-container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <div class="logo">
+
+    <img src="images/sidelogo.png"
+         alt="CareerConnect Logo"
+         class="logo-img">
+
+    <span>Career<span class="blue">Connect</span></span>
+
+</div>
+
+        <nav class="sidebar-menu">
+
+            <a href="#" class="menu-item">
+    <i class="fa-solid fa-house"></i>
+    <span>Dashboard</span>
+</a>
+
+            <a href="#" class="menu-item active">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span>Job Search</span>
+</a>
+
+            <a href="#" class="menu-item">
+                <i class="fa-regular fa-file-lines"></i>
+                <span>My Applications</span>
+            </a>
+
+            <a href="#" class="menu-item">
+                <i class="fa-regular fa-folder-open"></i>
+                <span>CV Builder</span>
+            </a>
+
+            <a href="#" class="menu-item">
+                <i class="fa-regular fa-user"></i>
+                <span>My Profile</span>
+            </a>
+
+            <a href="#" class="menu-item">
+                <i class="fa-regular fa-bell"></i>
+                <span>Notifications</span>
+                <span class="badge">3</span>
+            </a>
+
+            <a href="#" class="menu-item">
+                <i class="fa-solid fa-gear"></i>
+                <span>Settings</span>
+            </a>
+
+            <a href="#" class="menu-item">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                <span>Logout</span>
+            </a>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+            <img src="images/studentside.png" alt="Career Illustration">
+
+            
+
+           
+        </div>
+
+    </aside>
+
+
+    <!-- Main Content -->
+    <main class="content-area">
+
+        <!-- Navbar -->
+        <header class="navbar">
+
+            <div></div>
+
+            <div class="nav-right">
+
+                <div class="notification">
+                    <i class="fa-regular fa-bell"></i>
+                    <span>3</span>
+                </div>
+
+                <div class="profile">
+
+                    <img src="images/avatar.png" alt="Profile">
+
+                    <div class="profile-info">
+                        <h4>Aronho Dey</h4>
+                        <p>Student</p>
+                    </div>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- Page Content -->
+        <section class="page-content">
+
+            <!-- Banner -->
+            <div class="banner">
+
+                <div class="banner-content">
+
+                   
+
+                   
+
+                </div>
+
+                
+
+                <!-- Search -->
+                <div class="search-box">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <input type="text"
+                    placeholder="Search for jobs, companies or skills...">
+
+                    <button>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        Search
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Jobs Section -->
+            <div class="jobs-section">
+
+                <!-- Filters -->
+                <aside class="filter-box">
+
+                    <div class="filter-header">
+
+                        <h3>
+                            <i class="fa-solid fa-filter"></i>
+                            Filters
+                        </h3>
+
+                        <a href="#">Clear All</a>
+
+                    </div>
+
+
+                    <!-- Job Type -->
+                    <div class="filter-group">
+
+                        <h4>Job Type</h4>
+
+                        <label>
+                            <input type="checkbox" checked>
+                            Internship
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            Full-time
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            Part-time
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            Remote
+                        </label>
+
+                    </div>
+
+
+                    <!-- Department -->
+                    <div class="filter-group">
+
+                        <h4>Department</h4>
+
+                        <select>
+                            <option>All Departments</option>
+                            <option>Engineering</option>
+                            <option>Marketing</option>
+                            <option>Design</option>
+                            <option>Business</option>
+                        </select>
+
+                    </div>
+
+
+                    <!-- Location -->
+                    <div class="filter-group">
+
+                        <h4>Location</h4>
+
+                        <select>
+                            <option>All Locations</option>
+                            <option>Dhaka</option>
+                            <option>Chattogram</option>
+                            <option>Remote</option>
+                        </select>
+
+                    </div>
+
+
+                    <!-- Experience -->
+                    <div class="filter-group">
+
+                        <h4>Experience Level</h4>
+
+                        <label>
+                            <input type="checkbox" checked>
+                            Fresher
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            1-2 Years
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            2+ Years
+                        </label>
+
+                    </div>
+
+
+                    <!-- Deadline -->
+                    <div class="filter-group">
+
+                        <h4>Deadline</h4>
+
+                        <select>
+                            <option>Any Time</option>
+                            <option>Last 7 Days</option>
+                            <option>Last 15 Days</option>
+                            <option>Last 30 Days</option>
+                        </select>
+
+                    </div>
+
+
+                    <button class="apply-filter">
+                        <i class="fa-solid fa-filter"></i>
+                        Apply Filters
+                    </button>
+
+                </aside>
+
+
+                <!-- Job Results -->
+                <div class="job-results">
+
+                    <!-- Results Header -->
+                    <div class="results-header">
+
+                        <h4>Showing 1 - 12 of 85 jobs</h4>
+
+                        <div class="sort-options">
+
+                            <select>
+                                <option>Sort by: Most Recent</option>
+                                <option>Oldest First</option>
+                                <option>Company Name</option>
+                            </select>
+
+                            <button class="view-btn active">
+                                <i class="fa-solid fa-table-cells-large"></i>
+                            </button>
+
+                            <button class="view-btn">
+                                <i class="fa-solid fa-list"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Job Card 1 -->
+                    <div class="job-card">
+
+                        <div class="company-logo google">G</div>
+
+                        <div class="job-info">
+
+                            <h3>Software Engineering Intern</h3>
+
+                            <h4>Google <i class="fa-solid fa-circle-check verified"></i></h4>
+
+                            <div class="job-meta">
+
+                                <span><i class="fa-solid fa-briefcase"></i> Internship</span>
+
+                                <span><i class="fa-solid fa-location-dot"></i> Remote</span>
+
+                                <span><i class="fa-regular fa-clock"></i> Deadline: Nov 15, 2026</span>
+
+                            </div>
+
+                            <p>Join Google and work on real-world projects with our engineering team.</p>
+
+                            <div class="skills">
+                                <span>Python</span>
+                                <span>Machine Learning</span>
+                                <span>Problem Solving</span>
+                            </div>
+
+                        </div>
+
+                        <div class="job-action">
+
+                            <span class="status">● Open</span>
+
+                            <button>View Details <i class="fa-solid fa-arrow-right"></i></button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Job Card 2 -->
+                    <div class="job-card">
+
+                        <div class="company-logo microsoft">
+                            <div class="ms-logo">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+
+                        <div class="job-info">
+
+                            <h3>Frontend Developer Intern</h3>
+
+                            <h4>Microsoft <i class="fa-solid fa-circle-check verified"></i></h4>
+
+                            <div class="job-meta">
+
+                                <span><i class="fa-solid fa-briefcase"></i> Internship</span>
+
+                                <span><i class="fa-solid fa-location-dot"></i> On-site (Dhaka)</span>
+
+                                <span><i class="fa-regular fa-clock"></i> Deadline: Nov 20, 2026</span>
+
+                            </div>
+
+                            <p>Build modern web applications with Microsoft team.</p>
+
+                            <div class="skills">
+                                <span>React</span>
+                                <span>TypeScript</span>
+                                <span>UI/UX</span>
+                            </div>
+
+                        </div>
+
+                        <div class="job-action">
+
+                            <span class="status">● Open</span>
+
+                            <button>View Details <i class="fa-solid fa-arrow-right"></i></button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Job Card 3 -->
+                    <div class="job-card">
+
+                        <div class="company-logo meta">
+                            <i class="fa-solid fa-infinity"></i>
+                        </div>
+
+                        <div class="job-info">
+
+                            <h3>Web Development Intern</h3>
+
+                            <h4>Meta <i class="fa-solid fa-circle-check verified"></i></h4>
+
+                            <div class="job-meta">
+
+                                <span><i class="fa-solid fa-briefcase"></i> Internship</span>
+
+                                <span><i class="fa-solid fa-location-dot"></i> Remote</span>
+
+                                <span><i class="fa-regular fa-clock"></i> Deadline: Nov 18, 2026</span>
+
+                            </div>
+
+                            <p>Contribute to next generation web products at Meta.</p>
+
+                            <div class="skills">
+                                <span>React</span>
+                                <span>JavaScript</span>
+                                <span>Web Development</span>
+                            </div>
+
+                        </div>
+
+                        <div class="job-action">
+
+                            <span class="status">● Open</span>
+
+                            <button>View Details <i class="fa-solid fa-arrow-right"></i></button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Job Card 4 -->
+                    <div class="job-card">
+
+                        <div class="company-logo amazon">a</div>
+
+                        <div class="job-info">
+
+                            <h3>Software Development Intern</h3>
+
+                            <h4>Amazon <i class="fa-solid fa-circle-check verified"></i></h4>
+
+                            <div class="job-meta">
+
+                                <span><i class="fa-solid fa-briefcase"></i> Internship</span>
+
+                                <span><i class="fa-solid fa-location-dot"></i> On-site (Chattogram)</span>
+
+                                <span><i class="fa-regular fa-clock"></i> Deadline: Nov 25, 2026</span>
+
+                            </div>
+
+                            <p>Be a part of Amazon's innovative team.</p>
+
+                            <div class="skills">
+                                <span>Java</span>
+                                <span>Spring Boot</span>
+                                <span>Database</span>
+                            </div>
+
+                        </div>
+
+                        <div class="job-action">
+
+                            <span class="status">● Open</span>
+
+                            <button>View Details <i class="fa-solid fa-arrow-right"></i></button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+</html>

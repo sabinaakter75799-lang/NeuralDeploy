@@ -1,0 +1,632 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f2f7ff;
+    color: #071c50;
+}
+
+/* Main Layout */
+.container {
+    display: flex;
+    min-height: 100vh;
+    padding: 16px;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 182px;
+    min-width: 182px;
+    background: #071e4b;
+    color: white;
+    padding: 16px 13px;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 42px;
+    margin-left: -8px;
+    white-space: nowrap;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.brand-name {
+    color: white;
+}
+
+.brand-name span {
+    color: #0875ff;
+}
+
+.logo span {
+    color: #0875ff;
+}
+
+.logo i {
+    color: #0875ff;
+    margin-right: 5px;
+}
+
+.menu a {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    padding: 10px 15px;
+    margin-bottom: 3px;
+    border-radius: 10px;
+}
+
+.menu a i {
+    width: 17px;
+    font-size: 15px;
+}
+
+
+.menu a.active {
+    background: #2863ed;
+}
+
+.notification {
+    background: #ff3030;
+    border-radius: 50%;
+    padding: 2px 5px;
+    font-size: 10px;
+    margin-left: auto;
+}
+
+/* Promotion Card */
+.promo {
+    background: linear-gradient(145deg, #073eaa, #061e58);
+    border-radius: 12px;
+    text-align: center;
+    padding: 15px 10px;
+    margin-top: auto;
+    margin-bottom: 130px;
+}
+
+.promo .trophy {
+    font-size: 38px;
+    color: #ffb900;
+    margin-bottom: 12px;
+}
+
+.promo h4 {
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 12px;
+}
+
+.promo button {
+    border: none;
+    background: white;
+    color: #1760ed;
+    padding: 10px 13px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Main Content */
+.main {
+    flex: 1;
+    min-width: 0;
+}
+
+/* Top Navbar */
+.topbar {
+    height: 62px;
+    background: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 20px;
+    gap: 22px;
+    border: 1px solid #dce5f5;
+}
+
+.bell {
+    position: relative;
+    font-size: 19px;
+}
+
+.bell span {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: red;
+    color: white;
+    border-radius: 50%;
+    font-size: 10px;
+    padding: 3px 5px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+}
+
+.profile-img {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #dce8ff;
+}
+
+.profile-info b {
+    color: #071c50;
+}
+
+.profile-info small {
+    color: #52658c;
+    font-size: 10px;
+}
+
+.avatar {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: #dce8ff;
+    display: grid;
+    place-items: center;
+    font-size: 21px;
+}
+
+/* Page Content */
+.content {
+    padding: 20px 16px;
+}
+
+/* Job Banner */
+.job-banner {
+    background: linear-gradient(110deg, #e4edff, #c9dcff);
+    border-radius: 15px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.job-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.google-logo {
+    width: 103px;
+    height: 100px;
+    background: white;
+    border-radius: 16px;
+    display: grid;
+    place-items: center;
+    font-size: 75px;
+    font-weight: bold;
+    color: #4285f4;
+}
+
+.google-logo span {
+    background: conic-gradient(
+        #4285f4 0deg 90deg,
+        #34a853 90deg 150deg,
+        #fbbc05 150deg 220deg,
+        #ea4335 220deg 290deg,
+        #4285f4 290deg
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.job-info h2 {
+    font-size: 21px;
+    margin-bottom: 5px;
+}
+
+.job-info h3 {
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+.verified {
+    color: #1765ff;
+}
+
+.job-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 13px;
+    font-size: 12px;
+    margin-bottom: 9px;
+}
+
+.job-meta i {
+    margin-right: 5px;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.tags span {
+    background: #d5e4ff;
+    color: #0754c7;
+    padding: 4px 9px;
+    border-radius: 15px;
+    font-size: 10px;
+}
+
+.banner-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    align-items: flex-end;
+}
+
+.save-btn {
+    border: 1px solid #3b78ff;
+    background: white;
+    color: #1760ed;
+    border-radius: 20px;
+    padding: 8px 13px;
+    cursor: pointer;
+}
+
+.apply-btn {
+    border: none;
+    border-radius: 25px;
+    background: #075bff;
+    color: white;
+    padding: 12px 23px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    background: white;
+    padding: 5px;
+    border-radius: 20px;
+    margin-bottom: 8px;
+    width: fit-content;
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.tabs button {
+    border: 1px solid #e4ebf7;
+    background: white;
+    padding: 8px 17px;
+    border-radius: 20px;
+    color: #071e50;
+    font-size: 11px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.tabs button.active {
+    background: #3478ff;
+    color: white;
+}
+
+/* Details Layout */
+.details-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 233px;
+    gap: 6px;
+}
+
+.card {
+    background: white;
+    border-radius: 13px;
+    padding: 16px;
+    box-shadow: 0 3px 15px rgba(30, 75, 150, 0.06);
+    border: 1px solid #e9effb;
+}
+
+.card h3 {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.card h3 i {
+    color: #1760ff;
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+.description {
+    font-size: 12px;
+    line-height: 17px;
+    color: #071c50;
+    padding-left: 29px;
+    margin-bottom: 14px;
+}
+
+/* Responsibilities & Requirements */
+.section-title {
+    font-size: 13px;
+    font-weight: bold;
+    margin: 12px 0 7px;
+}
+
+.section-title i {
+    color: #2169ff;
+    font-size: 19px;
+    margin-right: 8px;
+}
+
+.job-list {
+    padding-left: 42px;
+    font-size: 11.5px;
+    line-height: 17px;
+}
+
+.job-list li::marker {
+    color: #1765ff;
+}
+
+/* Bottom Information */
+.info-box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background: #e2edff;
+    border-radius: 11px;
+    padding: 13px 5px;
+    margin-top: 15px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 12px;
+    border-right: 1px solid #b6ceff;
+    font-size: 10px;
+    line-height: 15px;
+}
+
+.info-item:last-child {
+    border: none;
+}
+
+.info-item i {
+    color: #1765ff;
+    font-size: 17px;
+}
+
+/* Right Column */
+.right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.company-logo {
+    font-size: 38px;
+    font-weight: bold;
+    color: #4285f4;
+}
+
+.company-heading {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 0 10px;
+}
+
+.company-heading h4 {
+    font-size: 12px;
+}
+
+.company-heading small {
+    font-size: 9px;
+    color: #52658c;
+}
+
+.company-desc {
+    font-size: 10px;
+    line-height: 15px;
+    margin-bottom: 10px;
+}
+
+.website {
+    color: #075bff;
+    font-size: 10px;
+    margin-bottom: 12px;
+}
+
+.view-btn {
+    width: 100%;
+    border: none;
+    background: #e5efff;
+    color: #075bff;
+    padding: 9px;
+    border-radius: 9px;
+    font-size: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Similar Jobs */
+.view-all {
+    float: right;
+    color: #075bff;
+    font-size: 10px;
+    text-decoration: none;
+}
+
+.similar-job {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 9px 0;
+    border-bottom: 1px solid #edf1f8;
+}
+
+.similar-job:last-child {
+    border-bottom: none;
+}
+
+.company-icon {
+    width: 38px;
+    text-align: center;
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.company-icon.meta {
+    color: #0866ff;
+}
+
+.company-icon.amazon {
+    color: #111;
+}
+
+.similar-job h4 {
+    font-size: 10px;
+    margin-bottom: 3px;
+}
+
+.similar-job p {
+    font-size: 9px;
+    color: #52658c;
+    margin-top: 3px;
+}
+
+.similar-job .arrow {
+    margin-left: auto;
+    color: #1765ff;
+}
+
+/* Responsive Design */
+@media(max-width: 900px) {
+
+    .details-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .right-column {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .promo {
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width: 650px) {
+
+    .container {
+        padding: 0;
+    }
+
+    .sidebar {
+        width: 65px;
+        min-width: 65px;
+        padding: 15px 8px;
+    }
+
+    .logo {
+        font-size: 0;
+        text-align: center;
+    }
+
+    .logo i {
+        font-size: 22px;
+    }
+
+    .menu a {
+        justify-content: center;
+        padding: 12px 5px;
+        gap: 0;
+    }
+
+    .menu a span:not(.notification),
+    .promo {
+        display: none;
+    }
+
+    .notification {
+        position: absolute;
+        margin-left: 20px;
+    }
+
+    .topbar {
+        padding: 0 10px;
+    }
+
+    .content {
+        padding: 12px 8px;
+    }
+
+    .job-banner {
+        flex-wrap: wrap;
+    }
+
+    .google-logo {
+        width: 65px;
+        height: 65px;
+        font-size: 48px;
+    }
+
+    .job-info h2 {
+        font-size: 16px;
+    }
+
+    .job-info h3 {
+        font-size: 14px;
+    }
+
+    .banner-actions {
+        flex-direction: row;
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    .tabs {
+        width: 100%;
+    }
+
+    .info-box {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+    .info-item:nth-child(2) {
+        border-right: none;
+    }
+
+    .right-column {
+        grid-template-columns: 1fr;
+    }
+}

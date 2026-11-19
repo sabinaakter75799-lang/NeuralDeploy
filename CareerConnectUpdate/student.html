@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerConnect - Student Dashboard</title>
+
+    <link rel="stylesheet" href="student.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <span class="logo-icon">C</span>
+            Career<span>Connect</span>
+        </div>
+
+        <nav class="sidebar-menu">
+
+            <a href="#" class="active">
+                <i class="fa-solid fa-house"></i>
+                Dashboard
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                Job Search
+            </a>
+
+            <a href="#">
+                <i class="fa-regular fa-file-lines"></i>
+                My Applications
+            </a>
+
+            <a href="#">
+                <i class="fa-regular fa-briefcase"></i>
+                CV Builder
+            </a>
+
+            <a href="#">
+                <i class="fa-regular fa-user"></i>
+                My Profile
+            </a>
+
+            <a href="#">
+                <i class="fa-regular fa-bell"></i>
+                Notifications
+                <span class="notification-count">3</span>
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-gear"></i>
+                Settings
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                Logout
+            </a>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+            <div class="student-illustration">👨🏻‍💻</div>
+            <h3>Build Your Career</h3>
+            <p>With CareerConnect</p>
+            <div class="bottom-line"></div>
+        </div>
+
+    </aside>
+
+
+    <!-- Main Content -->
+
+    <main class="main-content">
+
+        <!-- Navbar -->
+
+        <header class="navbar">
+
+            <div></div>
+
+            <div class="nav-right">
+
+                <div class="bell">
+                    <i class="fa-regular fa-bell"></i>
+                    <span>3</span>
+                </div>
+
+                <div class="user-info">
+
+                    <div class="user-avatar">👨🏻</div>
+
+                    <div>
+                        <h4>Aronno Dey</h4>
+                        <p>Student</p>
+                    </div>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <div class="content-area">
+
+            <!-- Welcome Banner -->
+
+            <section class="welcome-banner">
+
+                <div class="welcome-text">
+
+                    <h1>
+                        Welcome back, <span>Kartik</span> 👋
+                    </h1>
+
+                    <p>Your next opportunity is just a click away.</p>
+
+                    <button>
+                        Explore Jobs <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+
+                </div>
+
+                <div class="welcome-image">
+                    <div class="paper-plane">➤</div>
+                    <div class="welcome-person">👨🏻‍💻</div>
+                    <div class="welcome-slogan">
+                        Grow<br>Your Skills
+                    </div>
+                </div>
+
+            </section>
+
+
+            <!-- Statistics -->
+
+            <section class="stats-grid">
+
+                <div class="stat-card blue">
+                    <div class="stat-icon">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+
+                    <div>
+                        <h2>12</h2>
+                        <p>Total Applications</p>
+                    </div>
+
+                    <span class="growth">↑ 12%</span>
+                </div>
+
+
+                <div class="stat-card green">
+                    <div class="stat-icon">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+
+                    <div>
+                        <h2>4</h2>
+                        <p>Shortlisted</p>
+                    </div>
+
+                    <span class="growth">↑ 25%</span>
+                </div>
+
+
+                <div class="stat-card orange">
+                    <div class="stat-icon">
+                        <i class="fa-solid fa-calendar-days"></i>
+                    </div>
+
+                    <div>
+                        <h2>2</h2>
+                        <p>Upcoming Deadlines</p>
+                    </div>
+
+                    <span class="decrease">↓ 0%</span>
+                </div>
+
+
+                <div class="stat-card purple">
+                    <div class="stat-icon">
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <div>
+                        <h2>85%</h2>
+                        <p>Profile Completeness</p>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Middle Section -->
+
+            <section class="middle-section">
+
+
+                <!-- Activity Overview -->
+
+                <div class="activity-card">
+
+                    <div class="section-title">
+                        <h3>
+                            <i class="fa-solid fa-chart-simple"></i>
+                            Your Activity Overview
+                        </h3>
+
+                        <button class="small-btn">Last 6 Months</button>
+                    </div>
+
+                    <div class="chart">
+
+                        <div class="chart-labels">
+                            <span>15</span>
+                            <span>10</span>
+                            <span>5</span>
+                            <span>0</span>
+                        </div>
+
+                        <svg viewBox="0 0 500 180"
+                        preserveAspectRatio="none">
+
+                            <line x1="35" y1="15" x2="35" y2="150"
+                            stroke="#dbeafe"/>
+
+                            <line x1="35" y1="150" x2="480" y2="150"
+                            stroke="#dbeafe"/>
+
+                            <line x1="35" y1="20" x2="480" y2="20"
+                            stroke="#e8efff" stroke-dasharray="4"/>
+
+                            <line x1="35" y1="63" x2="480" y2="63"
+                            stroke="#e8efff" stroke-dasharray="4"/>
+
+                            <line x1="35" y1="106" x2="480" y2="106"
+                            stroke="#e8efff" stroke-dasharray="4"/>
+
+                            <polyline
+                            points="35,130 125,90 215,65 305,90 395,82 480,35"
+                            fill="none"
+                            stroke="#1764ff"
+                            stroke-width="3"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"/>
+
+                            <circle cx="35" cy="130" r="5" fill="#1764ff"/>
+                            <circle cx="125" cy="90" r="5" fill="#1764ff"/>
+                            <circle cx="215" cy="65" r="5" fill="#1764ff"/>
+                            <circle cx="305" cy="90" r="5" fill="#1764ff"/>
+                            <circle cx="395" cy="82" r="5" fill="#1764ff"/>
+                            <circle cx="480" cy="35" r="5" fill="#1764ff"/>
+
+                        </svg>
+
+                        <div class="chart-months">
+                            <span>May</span>
+                            <span>Jun</span>
+                            <span>Jul</span>
+                            <span>Aug</span>
+                            <span>Sep</span>
+                            <span>Oct</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Upcoming Deadlines -->
+
+                <div class="deadlines-card">
+
+                    <div class="section-title">
+                        <h3>Upcoming Deadlines</h3>
+                        <a href="#">View All →</a>
+                    </div>
+
+
+                    <div class="deadline-item">
+
+                        <div class="date">
+                            <span>NOV</span>
+                            <h3>01</h3>
+                        </div>
+
+                        <div class="company-logo google">G</div>
+
+                        <div class="deadline-info">
+                            <h4>Google Internship</h4>
+                            <p>Application Deadline</p>
+                        </div>
+
+                        <span class="days red">2 days left</span>
+
+                    </div>
+
+
+                    <div class="deadline-item">
+
+                        <div class="date">
+                            <span>NOV</span>
+                            <h3>05</h3>
+                        </div>
+
+                        <div class="company-logo microsoft">
+                            <span></span><span></span>
+                            <span></span><span></span>
+                        </div>
+
+                        <div class="deadline-info">
+                            <h4>Microsoft Job Opening</h4>
+                            <p>Application Deadline</p>
+                        </div>
+
+                        <span class="days orange-bg">6 days left</span>
+
+                    </div>
+
+
+                    <div class="deadline-item">
+
+                        <div class="date">
+                            <span>NOV</span>
+                            <h3>10</h3>
+                        </div>
+
+                        <div class="company-logo meta">∞</div>
+
+                        <div class="deadline-info">
+                            <h4>Meta Internship</h4>
+                            <p>Application Deadline</p>
+                        </div>
+
+                        <span class="days blue-bg">11 days left</span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Profile Card -->
+
+                <div class="profile-card">
+
+                    <div class="profile-avatar">👨🏻‍💻</div>
+
+                    <h3>Himel Mitra</h3>
+                    <p>CSE · 3rd Year</p>
+
+                    <div class="profile-divider"></div>
+
+                    <div class="member-date">
+                        <i class="fa-regular fa-calendar"></i>
+                        <span>Member Since<br>Oct 2025</span>
+                    </div>
+
+                    <div class="profile-divider"></div>
+
+                    <div class="strength">
+                        <div>
+                            <span>Profile Strength</span>
+                            <b>85%</b>
+                        </div>
+
+                        <div class="progress">
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <button class="edit-btn">
+                        <i class="fa-solid fa-pen"></i>
+                        Edit Profile
+                    </button>
+
+                    <div class="complete-profile">
+                        <h3>🏆 Complete Your Profile</h3>
+                        <p>Get better job recommendations and stand out to employers.</p>
+
+                        <button>Update Profile →</button>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Recommended Jobs -->
+
+            <section class="recommended-section">
+
+                <div class="section-title">
+                    <h3>🔥 Recommended Jobs</h3>
+                    <a href="#">View All →</a>
+                </div>
+
+
+                <div class="jobs-grid">
+
+
+                    <!-- Job 1 -->
+
+                    <div class="job-card">
+
+                        <div class="job-top">
+                            <div class="job-logo google">G</div>
+                            <span class="job-type">Internship</span>
+                        </div>
+
+                        <h4>Software Engineering Intern</h4>
+
+                        <div class="job-location">
+                            <i class="fa-solid fa-location-dot"></i>
+                            Remote
+                        </div>
+
+                        <button>Apply Now</button>
+
+                    </div>
+
+
+                    <!-- Job 2 -->
+
+                    <div class="job-card">
+
+                        <div class="job-top">
+
+                            <div class="job-logo microsoft">
+                                <span></span><span></span>
+                                <span></span><span></span>
+                            </div>
+
+                            <span class="job-type">Internship</span>
+
+                        </div>
+
+                        <h4>Frontend Developer Intern</h4>
+
+                        <div class="job-location">
+                            <i class="fa-solid fa-location-dot"></i>
+                            On-site (Dhaka)
+                        </div>
+
+                        <button>Apply Now</button>
+
+                    </div>
+
+
+                    <!-- Job 3 -->
+
+                    <div class="job-card">
+
+                        <div class="job-top">
+                            <div class="job-logo meta">∞</div>
+                            <span class="job-type">Internship</span>
+                        </div>
+
+                        <h4>Web Development Intern</h4>
+
+                        <div class="job-location">
+                            <i class="fa-solid fa-location-dot"></i>
+                            Remote
+                        </div>
+
+                        <button>Apply Now</button>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Applicants - CareerConnect</title>
+
+    <link rel="stylesheet" href="applicants.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <img src="images/sidelogo.png" alt="Logo">
+            <h2>Career<span>Connect</span></h2>
+        </div>
+
+        <nav class="sidebar-menu">
+
+            <a href="#">
+                <i class="fa-solid fa-house"></i>
+                Dashboard
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-plus"></i>
+                Post a Job
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-briefcase"></i>
+                Manage Jobs
+            </a>
+
+            <a href="#" class="active">
+                <i class="fa-regular fa-user"></i>
+                Applicants
+            </a>
+
+            <a href="#">
+                <i class="fa-regular fa-star"></i>
+                Shortlisted Candidates
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-bell"></i>
+                Notifications
+                <span class="menu-badge">3</span>
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-gear"></i>
+                Settings
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                Logout
+            </a>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+            <img src="images/sidebottom.png" alt="Career Promotion">
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN AREA -->
+    <main class="main-area">
+
+        <!-- NAVBAR -->
+        <header class="navbar">
+
+            <div></div>
+
+            <div class="nav-right">
+
+                <div class="notification">
+                    <i class="fa-regular fa-bell"></i>
+                    <span class="notification-count">3</span>
+                </div>
+
+                <div class="profile">
+
+                    <img src="images/employee.png" alt="Profile">
+
+                    <div>
+                        <h4>Antu Roy</h4>
+                        <p>Student</p>
+                    </div>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- CONTENT -->
+        <section class="content">
+
+            <div class="applicants-card">
+
+                <!-- PAGE HEADER -->
+                <div class="page-header">
+
+                    <h1>Applicants</h1>
+
+                    <p>
+                        Review and manage candidates who applied for your jobs.
+                    </p>
+
+                </div>
+
+
+                <!-- SEARCH AND FILTER -->
+                <div class="filter-row">
+
+                    <div class="search-box">
+
+                        <i class="fa-solid fa-magnifying-glass"></i>
+
+                        <input type="text"
+                        placeholder="Search by applicant name or job title...">
+
+                    </div>
+
+
+                    <select class="filter-select">
+                        <option>All Jobs</option>
+                        <option>Frontend Developer</option>
+                        <option>Software Engineer</option>
+                        <option>Marketing Intern</option>
+                        <option>Graphic Designer</option>
+                    </select>
+
+
+                    <select class="filter-select">
+                        <option>All Status</option>
+                        <option>Under Review</option>
+                        <option>Shortlisted</option>
+                        <option>Rejected</option>
+                    </select>
+
+
+                    <button class="filter-btn">
+                        <i class="fa-solid fa-filter"></i>
+                        Filter
+                    </button>
+
+                </div>
+
+
+                <!-- APPLICANTS TABLE -->
+                <div class="table-container">
+
+                    <table class="applicants-table">
+
+                        <thead>
+
+                            <tr>
+                                <th>Applicant Name</th>
+                                <th>Applied Job</th>
+                                <th>Email</th>
+                                <th>Applied Date</th>
+                                <th>Status</th>
+                                <th colspan="2">Actions</th>
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+                            <!-- APPLICANT 1 -->
+                            <tr>
+
+                                <td>
+                                    <div class="applicant-info">
+                                        <strong>Ayesha Rahman</strong>
+                                        <span>Dhaka, BD</span>
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <div class="job-info">
+                                        <strong>Frontend Developer</strong>
+                                        <span>Tech Solutions Ltd.</span>
+                                    </div>
+                                </td>
+
+                                <td>ayesha@example.com</td>
+
+                                <td>Aug 8, 2026</td>
+
+                                <td>
+                                    <span class="status under-review">
+                                        Under Review
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <button class="view-btn">View</button>
+                                </td>
+
+                                <td>
+                                    <button class="shortlist-btn">
+                                        Shortlist
+                                    </button>
+                                </td>
+
+                            </tr>
+
+
+                            <!-- APPLICANT 2 -->
+                            <tr>
+
+                                <td>
+                                    <div class="applicant-info">
+                                        <strong>Tanvir Hasan</strong>
+                                        <span>Chattogram, BD</span>
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <div class="job-info">
+                                        <strong>Software Engineer</strong>
+                                        <span>ABC Technologies</span>
+                                    </div>
+                                </td>
+
+                                <td>tanvir@example.com</td>
+
+                                <td>Aug 10, 2026</td>
+
+                                <td>
+                                    <span class="status under-review">
+                                        Under Review
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <button class="view-btn">View</button>
+                                </td>
+
+                                <td>
+                                    <button class="shortlist-btn">
+                                        Shortlist
+                                    </button>
+                                </td>
+
+                            </tr>
+
+
+                            <!-- APPLICANT 3 -->
+                            <tr>
+
+                                <td>
+                                    <div class="applicant-info">
+                                        <strong>Nusrat Jahan</strong>
+                                        <span>Dhaka, BD</span>
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <div class="job-info">
+                                        <strong>Marketing Intern</strong>
+                                        <span>Bright Media</span>
+                                    </div>
+                                </td>
+
+                                <td>nusrat@example.com</td>
+
+                                <td>Aug 12, 2026</td>
+
+                                <td>
+                                    <span class="status shortlisted">
+                                        Shortlisted
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <button class="view-btn">View</button>
+                                </td>
+
+                                <td>
+                                    <button class="shortlist-btn">
+                                        Shortlist
+                                    </button>
+                                </td>
+
+                            </tr>
+
+
+                            <!-- APPLICANT 4 -->
+                            <tr>
+
+                                <td>
+                                    <div class="applicant-info">
+                                        <strong>Rakib Ahmed</strong>
+                                        <span>Gazipur, BD</span>
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <div class="job-info">
+                                        <strong>Graphic Designer</strong>
+                                        <span>Creative Studio</span>
+                                    </div>
+                                </td>
+
+                                <td>rakib@example.com</td>
+
+                                <td>Aug 14, 2026</td>
+
+                                <td>
+                                    <span class="status rejected">
+                                        Rejected
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <button class="view-btn">View</button>
+                                </td>
+
+                                <td>
+                                    <button class="shortlist-btn">
+                                        Shortlist
+                                    </button>
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+
+                <!-- PAGINATION -->
+                <div class="pagination-area">
+
+                    <p>Showing 4 of 4 jobs</p>
+
+                    <div class="pagination">
+
+                        <button class="page-btn">Previous</button>
+
+                        <button class="page-number">1</button>
+
+                        <button class="page-btn">Next</button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+</html>

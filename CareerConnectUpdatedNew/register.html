@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register - CareerConnect</title>
+  <!-- FontAwesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Register CSS Link -->
+  <link rel="stylesheet" href="register.css">
+</head>
+<body>
+
+  <!-- Header / Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <!-- আপনার লোগো ইমেজের ফাইল নাম এখানে দিন (যেমন: logo.png) -->
+      <img src="images/logo.png" alt="CareerConnect Logo" class="navbar-logo-img">
+      <h2>Career<span>Connect</span></h2>
+    </div>
+    <nav class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">Browse Jobs</a>
+      <a href="#">About Us</a>
+      <a href="#">Contact</a>
+      <a href="#" class="btn-login-link">Login</a>
+      <a href="#" class="btn-register-nav">Register</a>
+    </nav>
+  </header>
+
+  <!-- Main Container -->
+  <main class="container">
+    <div class="register-card">
+      
+      <!-- Left Hero Section -->
+      <div class="left-section">
+        <div class="brand-sub-header">
+          <div class="small-logo">
+            <!-- এখানেও আপনার লোগো ইমেজ দিন -->
+            <img src="images/logo.png" alt="CareerConnect Logo" class="hero-logo-img">
+            <div>
+              <h3>Career<span>Connect</span></h3>
+              <p>Jobs • Internships • Grow Together</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="welcome-text">
+          <h1>Welcome to Career<span>Connect!</span></h1>
+          <p>Log in to your account and continue <br> your journey towards a better career.</p>
+        </div>
+
+        <div class="hero-img">
+          <!-- Hero Illustration Image -->
+          <img src="images/loginlogo.png" alt="CareerConnect Illustration">
+        </div>
+
+        <div class="features-footer">
+          <div class="feature-item">
+            <i class="fa-solid fa-briefcase"></i>
+            <span>Find Opportunities</span>
+          </div>
+          <div class="feature-item">
+            <i class="fa-solid fa-user-group"></i>
+            <span>Connect with Employers</span>
+          </div>
+          <div class="feature-item">
+            <i class="fa-solid fa-chart-line"></i>
+            <span>Build Your Future</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Form Section -->
+      <div class="right-section">
+        <div class="form-header">
+          <h2>Register</h2>
+          <p>Start your journey with CareerConnect</p>
+        </div>
+
+        <form class="register-form">
+          <!-- Full Name -->
+          <div class="input-group">
+            <i class="fa-regular fa-user input-icon"></i>
+            <input type="text" placeholder="Full Name" required>
+          </div>
+
+          <!-- Email Address -->
+          <div class="input-group">
+            <i class="fa-regular fa-envelope input-icon"></i>
+            <input type="email" placeholder="Email Address" required>
+          </div>
+
+          <!-- Password -->
+          <div class="input-group">
+            <i class="fa-solid fa-lock input-icon"></i>
+            <input type="password" placeholder="Password" required>
+            <i class="fa-regular fa-eye toggle-password"></i>
+          </div>
+
+          <!-- Confirm Password -->
+          <div class="input-group">
+            <i class="fa-solid fa-lock input-icon"></i>
+            <input type="password" placeholder="Confirm Password" required>
+            <i class="fa-regular fa-eye toggle-password"></i>
+          </div>
+
+          <!-- Select Department -->
+          <div class="input-group">
+            <i class="fa-solid fa-graduation-cap input-icon"></i>
+            <select required>
+              <option value="" disabled selected hidden>Select Department</option>
+              <option value="cse">Computer Science & Engineering</option>
+              <option value="eee">Electrical & Electronic Engineering</option>
+              <option value="bba">Business Administration</option>
+              <option value="other">Other</option>
+            </select>
+            <i class="fa-solid fa-chevron-down select-arrow"></i>
+          </div>
+
+          <!-- Phone Number -->
+          <div class="input-group">
+            <i class="fa-solid fa-phone input-icon"></i>
+            <input type="tel" placeholder="Phone Number" required>
+          </div>
+
+          <!-- Terms Checkbox -->
+          <div class="terms-group">
+            <input type="checkbox" id="terms" required checked>
+            <label for="terms">I agree to the <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a></label>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" class="btn-submit">
+            <i class="fa-solid fa-user-plus"></i> Register
+          </button>
+        </form>
+
+        <div class="divider">
+          <span>OR</span>
+        </div>
+
+        <p class="login-prompt">Already have an account? <a href="#">Login</a></p>
+      </div>
+
+    </div>

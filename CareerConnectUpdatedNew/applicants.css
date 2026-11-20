@@ -1,0 +1,558 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #F4F6FA;
+    color: #173B67;
+}
+
+.dashboard {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    background: #F0F6FF;
+}
+
+
+/* SIDEBAR */
+
+.sidebar {
+    width: 183px;
+    min-width: 183px;
+    min-height: 100vh;
+    background: #071F4D;
+    color: white;
+    padding: 15px 12px;
+    position: relative;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-left: 4px;
+    margin-bottom: 35px;
+}
+
+.logo img {
+    width: 27px;
+    height: 27px;
+    object-fit: contain;
+}
+
+.logo h2 {
+    font-size: 17px;
+    color: white;
+}
+
+.logo h2 span {
+    color: #2864E8;
+}
+
+.sidebar-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.sidebar-menu a {
+    min-height: 34px;
+    padding: 0 14px;
+    display: flex;
+    align-items: center;
+    gap: 23px;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.sidebar-menu a i {
+    width: 16px;
+    font-size: 15px;
+}
+
+.sidebar-menu a.active {
+    background: #2864E8;
+}
+
+.sidebar-menu a:hover {
+    background: #17458F;
+}
+
+.menu-badge {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #FF3B4A;
+    color: white;
+    font-size: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+}
+
+.sidebar-bottom {
+    position: absolute;
+    bottom: 70px;
+    left: 12px;
+    right: 12px;
+}
+
+.sidebar-bottom img {
+    width: 100%;
+    display: block;
+    object-fit: contain;
+}
+
+
+/* MAIN AREA */
+
+.main-area {
+    flex: 1;
+    min-width: 0;
+}
+
+
+/* NAVBAR */
+
+.navbar {
+    height: 63px;
+    background: white;
+    border: 1px solid #E2E8F0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.notification {
+    width: 30px;
+    height: 35px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.notification i {
+    font-size: 19px;
+}
+
+.notification-count {
+    position: absolute;
+    top: -3px;
+    right: -5px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #FF3B4A;
+    color: white;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    border-left: 1px solid #E2E8F0;
+    padding-left: 12px;
+}
+
+.profile img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile h4 {
+    font-size: 11px;
+    margin-bottom: 4px;
+}
+
+.profile p {
+    font-size: 10px;
+    color: #64748B;
+}
+
+.profile > i {
+    font-size: 11px;
+    margin-left: 10px;
+}
+
+
+/* CONTENT */
+
+.content {
+    padding: 18px;
+}
+
+
+/* MAIN CARD */
+
+.applicants-card {
+    width: 100%;
+    min-height: 614px;
+    background: white;
+    border: 1px solid #D6E1F0;
+    border-radius: 9px;
+    padding: 28px;
+}
+
+
+/* PAGE HEADER */
+
+.page-header {
+    margin-bottom: 28px;
+}
+
+.page-header h1 {
+    font-size: 20px;
+    color: #173B67;
+    margin-bottom: 9px;
+}
+
+.page-header p {
+    font-size: 12px;
+    color: #173B67;
+}
+
+
+/* FILTER ROW */
+
+.filter-row {
+    display: grid;
+    grid-template-columns: minmax(200px, 2.3fr) 1fr 1fr auto;
+    gap: 24px;
+    margin-bottom: 28px;
+}
+
+.search-box {
+    height: 32px;
+    border: 1px solid #D6E1F0;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 0 22px;
+    gap: 15px;
+}
+
+.search-box i {
+    font-size: 11px;
+    color: #222;
+}
+
+.search-box input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 10px;
+    color: #173B67;
+}
+
+.search-box input::placeholder {
+    color: #91A1BA;
+}
+
+.filter-select {
+    height: 32px;
+    border: 1px solid #D6E1F0;
+    border-radius: 5px;
+    padding: 0 12px;
+    background: white;
+    color: #536987;
+    font-size: 10px;
+    outline: none;
+}
+
+.filter-btn {
+    height: 32px;
+    padding: 0 15px;
+    background: #173B67;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.filter-btn i {
+    margin-right: 5px;
+}
+
+.filter-btn:hover {
+    background: #2864E8;
+}
+
+
+/* TABLE */
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.applicants-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    text-align: left;
+}
+
+.applicants-table thead th {
+    height: 34px;
+    background: white;
+    color: #173B67;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 0 15px;
+    border-top: 1px solid #DCEAFF;
+    border-bottom: 1px solid #DCEAFF;
+}
+
+.applicants-table thead th:first-child {
+    border-left: 1px solid #DCEAFF;
+    border-radius: 5px 0 0 5px;
+}
+
+.applicants-table thead th:last-child {
+    border-right: 1px solid #DCEAFF;
+    border-radius: 0 5px 5px 0;
+}
+
+.applicants-table tbody tr {
+    height: 67px;
+}
+
+.applicants-table tbody td {
+    background: white;
+    border-top: 1px solid #DFE9F8;
+    border-bottom: 1px solid #DFE9F8;
+    padding: 8px 15px;
+    font-size: 9px;
+    color: #173B67;
+    white-space: nowrap;
+}
+
+.applicants-table tbody td:first-child {
+    border-left: 1px solid #DFE9F8;
+}
+
+.applicants-table tbody td:last-child {
+    border-right: 1px solid #DFE9F8;
+}
+
+.applicants-table tbody tr:hover td {
+    background: #F8FBFF;
+}
+
+
+/* APPLICANT AND JOB INFO */
+
+.applicant-info,
+.job-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.applicant-info strong,
+.job-info strong {
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.applicant-info span,
+.job-info span {
+    font-size: 9px;
+    color: #71829D;
+}
+
+
+/* STATUS BADGES */
+
+.status {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 23px;
+    padding: 0 9px;
+    border-radius: 20px;
+    font-size: 8px;
+    white-space: nowrap;
+}
+
+.under-review {
+    background: #FFF1C2;
+    color: #D97706;
+}
+
+.shortlisted {
+    background: #DDF9E9;
+    color: #087C45;
+}
+
+.rejected {
+    background: #FFE1E1;
+    color: #DC2626;
+}
+
+
+/* ACTION BUTTONS */
+
+.view-btn {
+    width: 58px;
+    height: 23px;
+    border: 1px solid #D5E0EF;
+    border-radius: 5px;
+    background: white;
+    color: #173B67;
+    font-size: 9px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.shortlist-btn {
+    width: 64px;
+    height: 23px;
+    border: none;
+    border-radius: 5px;
+    background: #173B67;
+    color: white;
+    font-size: 9px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.view-btn:hover {
+    border-color: #2864E8;
+    color: #2864E8;
+}
+
+.shortlist-btn:hover {
+    background: #2864E8;
+}
+
+
+/* PAGINATION */
+
+.pagination-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.pagination-area p {
+    font-size: 10px;
+    color: #71829D;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.page-btn {
+    width: 87px;
+    height: 35px;
+    border: 1px solid #D6E1F0;
+    border-radius: 5px;
+    background: white;
+    color: #536987;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.page-number {
+    width: 26px;
+    height: 26px;
+    border: none;
+    border-radius: 5px;
+    background: #173B67;
+    color: white;
+    font-size: 11px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 1050px) {
+
+    .filter-row {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+    .search-box {
+        grid-column: span 2;
+    }
+
+    .table-container {
+        overflow-x: auto;
+    }
+
+    .applicants-table {
+        min-width: 850px;
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .sidebar {
+        width: 65px;
+        min-width: 65px;
+    }
+
+    .logo h2 {
+        display: none;
+    }
+
+    .sidebar-menu a {
+        justify-content: center;
+        gap: 0;
+        font-size: 0;
+    }
+
+    .sidebar-menu a i {
+        font-size: 16px;
+    }
+
+    .sidebar-bottom {
+        display: none;
+    }
+
+    .content {
+        padding: 12px;
+    }
+
+    .applicants-card {
+        padding: 15px;
+    }
+
+    .pagination-area {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+}

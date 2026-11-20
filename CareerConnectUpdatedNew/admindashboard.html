@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerConnect - Admin Dashboard</title>
+
+    <link rel="stylesheet" href="admindashboard.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<div class="dashboard">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <div class="logo">
+    <img src="images/sidelogo.png" alt="CareerConnect Logo">
+    <h2><span>Career</span><span>Connect</span></h2>
+</div>
+
+        <nav>
+            <a href="#" class="active">
+                <i class="fa-solid fa-house"></i>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-users"></i>
+                <span>Manage Users</span>
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-briefcase"></i>
+                <span>Manage Jobs</span>
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <span>Manage Internships</span>
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-grip"></i>
+                <span>Categories & Skills</span>
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-chart-simple"></i>
+                <span>Reports</span>
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-bell"></i>
+                <span>Notifications</span>
+                <b class="badge">3</b>
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-gear"></i>
+                <span>Settings</span>
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <span>Logout</span>
+            </a>
+        </nav>
+
+        <div class="admin-card">
+            <i class="fa-solid fa-crown"></i>
+            <h3>Admin Panel</h3>
+            <p>Super Administrator</p>
+        </div>
+
+    </aside>
+
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Top Navbar -->
+        <header class="topbar">
+
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search users, jobs, internships...">
+            </div>
+
+            <div class="top-right">
+
+                <div class="notification">
+                    <i class="fa-regular fa-bell"></i>
+                    <span>3</span>
+                </div>
+
+                <div class="admin-profile">
+                    <img src="images/adminavatar.png" alt="Admin">
+                    <h3>Admin</h3>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- Page Content -->
+        <div class="content">
+
+            <!-- Hero Section -->
+            <section class="hero">
+    <img src="images/admin.png" alt="Admin Dashboard">
+</section>
+
+
+            <!-- Statistics Cards -->
+            <section class="stats">
+
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+
+                    <div class="stat-info">
+                        <h2>12,480</h2>
+                        <p>Total Users</p>
+                    </div>
+
+                    <span class="growth">↑ 12%</span>
+                </div>
+
+
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+
+                    <div class="stat-info">
+                        <h2>856</h2>
+                        <p>Total Jobs</p>
+                    </div>
+
+                    <span class="growth">↑ 8%</span>
+                </div>
+
+
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+
+                    <div class="stat-info">
+                        <h2>342</h2>
+                        <p>Total Internships</p>
+                    </div>
+
+                    <span class="growth">↑ 10%</span>
+                </div>
+
+
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fa-solid fa-file-lines"></i>
+                    </div>
+
+                    <div class="stat-info">
+                        <h2>4,721</h2>
+                        <p>Total Applications</p>
+                    </div>
+
+                    <span class="growth">↑ 14%</span>
+                </div>
+
+            </section>
+
+
+            <!-- Middle Section -->
+            <section class="middle-section">
+
+                <!-- Platform Overview -->
+                <div class="panel overview">
+
+                    <div class="panel-header">
+                        <h2>
+                            <i class="fa-solid fa-chart-simple"></i>
+                            Platform Overview
+                        </h2>
+
+                        <select>
+                            <option>Last 6 Months</option>
+                            <option>Last 3 Months</option>
+                            <option>Last 12 Months</option>
+                        </select>
+                    </div>
+
+
+                    <div class="chart-legend">
+                        <span class="blue-dot"></span> Users
+                        <span class="purple-dot"></span> Jobs
+                    </div>
+
+
+                    <div class="chart">
+
+                        <div class="y-labels">
+                            <span>8k</span>
+                            <span>6k</span>
+                            <span>4k</span>
+                            <span>2k</span>
+                            <span>0</span>
+                        </div>
+
+                        <div class="chart-area">
+
+                            <div class="grid-lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                            <svg viewBox="0 0 620 175" preserveAspectRatio="none">
+
+                                <polyline
+                                points="0,100 124,75 248,60 372,55 496,32 620,8"
+                                class="users-line"/>
+
+                                <polyline
+                                points="0,130 124,105 248,85 372,80 496,60 620,38"
+                                class="jobs-line"/>
+
+                                <g class="user-points">
+                                    <circle cx="0" cy="100" r="5"/>
+                                    <circle cx="124" cy="75" r="5"/>
+                                    <circle cx="248" cy="60" r="5"/>
+                                    <circle cx="372" cy="55" r="5"/>
+                                    <circle cx="496" cy="32" r="5"/>
+                                    <circle cx="620" cy="8" r="5"/>
+                                </g>
+
+                                <g class="job-points">
+                                    <circle cx="0" cy="130" r="5"/>
+                                    <circle cx="124" cy="105" r="5"/>
+                                    <circle cx="248" cy="85" r="5"/>
+                                    <circle cx="372" cy="80" r="5"/>
+                                    <circle cx="496" cy="60" r="5"/>
+                                    <circle cx="620" cy="38" r="5"/>
+                                </g>
+
+                            </svg>
+
+                            <div class="x-labels">
+                                <span>Jun</span>
+                                <span>Jul</span>
+                                <span>Aug</span>
+                                <span>Sep</span>
+                                <span>Oct</span>
+                                <span>Nov</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Recent Activities -->
+                <div class="panel activities">
+
+                    <div class="panel-header">
+                        <h2>
+                            <i class="fa-solid fa-clock"></i>
+                            Recent Activities
+                        </h2>
+
+                        <a href="#">View All →</a>
+                    </div>
+
+
+                    <div class="activity-item">
+                        <div class="activity-icon">
+                            <i class="fa-solid fa-user-plus"></i>
+                        </div>
+
+                        <div>
+                            <h3>New user registered</h3>
+                            <p>2 minutes ago</p>
+                        </div>
+                    </div>
+
+
+                    <div class="activity-item">
+                        <div class="activity-icon">
+                            <i class="fa-solid fa-briefcase"></i>
+                        </div>
+
+                        <div>
+                            <h3>New job posted by Google</h3>
+                            <p>5 minutes ago</p>
+                        </div>
+                    </div>
+
+
+                    <div class="activity-item">
+                        <div class="activity-icon">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+
+                        <div>
+                            <h3>New internship posted by Nestlé</h3>
+                            <p>10 minutes ago</p>
+                        </div>
+                    </div>
+
+
+                    <div class="activity-item">
+                        <div class="activity-icon">
+                            <i class="fa-solid fa-file-lines"></i>
+                        </div>
+
+                        <div>
+                            <h3>Application received for Frontend Developer</h3>
+                            <p>12 minutes ago</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Bottom Section -->
+            <section class="bottom-section">
+
+
+                <!-- Top Companies -->
+                <div class="panel companies">
+
+                    <div class="panel-header">
+                        <h2>
+                            <i class="fa-solid fa-trophy"></i>
+                            Top Companies
+                        </h2>
+
+                        <a href="#">View All →</a>
+                    </div>
+
+
+                    <div class="company-list">
+
+                        <div class="company">
+                            <div class="company-logo">
+                                <img src="images/google.png" alt="Google">
+                            </div>
+                            <h3>Google</h3>
+                            <p>128 Jobs</p>
+                        </div>
+
+
+                        <div class="company">
+                            <div class="company-logo">
+                                <img src="images/microsoftlogo.png" alt="Microsoft">
+                            </div>
+                            <h3>Microsoft</h3>
+                            <p>102 Jobs</p>
+                        </div>
+
+
+                        <div class="company">
+                            <div class="company-logo">
+                                <img src="images/metalogo.png" alt="Meta">
+                            </div>
+                            <h3>Meta</h3>
+                            <p>87 Jobs</p>
+                        </div>
+
+
+                        <div class="company">
+                            <div class="company-logo">
+                                <img src="images/applelogo.png" alt="Apple">
+                            </div>
+                            <h3>Apple</h3>
+                            <p>73 Jobs</p>
+                        </div>
+
+
+                        <div class="company">
+                            <div class="company-logo">
+                                <img src="images/amazonlogo.png" alt="Amazon">
+                            </div>
+                            <h3>Amazon</h3>
+                            <p>65 Jobs</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Quick Actions -->
+                <div class="panel quick-actions">
+
+                    <div class="panel-header">
+                        <h2>
+                            <i class="fa-solid fa-bolt"></i>
+                            Quick Actions
+                        </h2>
+                    </div>
+
+
+                    <div class="action-grid">
+
+                        <button class="dark-btn">
+                            <i class="fa-solid fa-users"></i>
+                            Manage Users
+                        </button>
+
+                        <button>
+                            <i class="fa-solid fa-briefcase"></i>
+                            Post a Job
+                        </button>
+
+                        <button>
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            Post an Internship
+                        </button>
+
+                        <button>
+                            <i class="fa-solid fa-chart-simple"></i>
+                            View Reports
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+</div>
+
+</body>
+</html>

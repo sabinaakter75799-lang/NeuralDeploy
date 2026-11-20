@@ -1,0 +1,592 @@
+/* =========================
+   GENERAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #F4F6FA;
+    color: #071F4D;
+}
+
+.main-container {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.sidebar {
+    width: 183px;
+    min-width: 183px;
+    min-height: 100vh;
+    background: #071F4D;
+    color: white;
+    padding: 15px 12px;
+    position: relative;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 16px;
+    font-weight: 700;
+    height: 35px;
+    margin-bottom: 36px;
+    white-space: nowrap;
+}
+
+.logo img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+.blue {
+    color: #1674F9;
+}
+
+.sidebar-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.menu-item {
+    height: 35px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    border-radius: 9px;
+}
+
+.menu-item i {
+    font-size: 14px;
+    width: 15px;
+}
+
+.menu-item.active,
+.menu-item:hover {
+    background: #2864E8;
+}
+
+.badge {
+    background: #FF3939;
+    color: white;
+    font-size: 9px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+}
+
+
+/* =========================
+   SIDEBAR ILLUSTRATION
+========================= */
+
+.sidebar-bottom {
+    position: absolute;
+    bottom:60px;
+    left: 12px;
+    right: 12px;
+    text-align: center;
+}
+
+.sidebar-bottom img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+.content-area {
+    flex: 1;
+    min-width: 0;
+    background: #F0F6FF;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    height: 62px;
+    background: white;
+    border: 1px solid #E1E7F0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 22px;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.notification {
+    position: relative;
+    font-size: 19px;
+    color: #071F4D;
+}
+
+.notification span {
+    position: absolute;
+    top: -7px;
+    right: -7px;
+    width: 14px;
+    height: 14px;
+    background: #F33342;
+    color: white;
+    font-size: 9px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.profile img {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-info h4 {
+    font-size: 10px;
+}
+
+.profile-info p {
+    font-size: 9px;
+    color: #64748B;
+    margin-top: 3px;
+}
+
+.profile > i {
+    font-size: 11px;
+    margin-left: 10px;
+}
+
+
+/* =========================
+   PAGE CONTENT
+========================= */
+
+.page-content {
+    padding: 18px 16px 25px;
+}
+
+.saved-content {
+    width: 100%;
+    background: #F8FAFF;
+
+    /* Blue Border Removed */
+    border: none;
+
+    padding: 10px 14px;
+}
+
+
+/* =========================
+   HERO BANNER
+========================= */
+
+.saved-banner {
+    width: 100%;
+    height: 106px;
+    border-radius: 13px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.saved-banner img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: fill;
+}
+
+
+/* =========================
+   FILTER SECTION
+========================= */
+
+.filter-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 14px;
+}
+
+.filter-tabs {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 8px 15px;
+    background: white;
+    border: 1px solid #DFE8FA;
+    border-radius: 20px;
+    color: #071F4D;
+    font-family: inherit;
+    font-size: 10px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.filter-btn.active {
+    background: #2864F5;
+    color: white;
+    border-color: #2864F5;
+}
+
+.clear-btn {
+    padding: 7px 13px;
+    border: 1px solid #4383FF;
+    border-radius: 20px;
+    background: white;
+    color: #0862F5;
+    font-size: 10px;
+    font-family: inherit;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.clear-btn i {
+    margin-right: 4px;
+}
+
+
+/* =========================
+   SAVED JOBS LIST
+========================= */
+
+.saved-jobs-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.saved-job-card {
+    min-height: 86px;
+    display: flex;
+    align-items: center;
+    background: white;
+    border: 1px solid #E5ECFA;
+    border-radius: 13px;
+    padding: 9px 12px;
+    gap: 12px;
+    box-shadow: 0 2px 8px rgba(30,70,140,0.04);
+}
+
+
+/* =========================
+   COMPANY LOGO
+========================= */
+
+.company-logo {
+    width: 88px;
+    min-width: 88px;
+    height: 68px;
+    background: #FAFBFF;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.company-logo img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+}
+
+
+/* =========================
+   JOB DETAILS
+========================= */
+
+.job-details {
+    flex: 1;
+    min-width: 0;
+}
+
+.job-details h3 {
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 2px;
+    color: #071F4D;
+}
+
+.verified {
+    color: #0862F5;
+    font-size: 11px;
+}
+
+.job-details > p {
+    font-size: 11px;
+    margin-bottom: 4px;
+}
+
+.job-meta {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+}
+
+.job-meta span {
+    font-size: 10px;
+    color: #34466B;
+}
+
+.job-meta i {
+    margin-right: 3px;
+    color: #071F4D;
+}
+
+
+/* =========================
+   SKILLS
+========================= */
+
+.skills {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.skills span {
+    background: #E5EEFF;
+    color: #0862F5;
+    padding: 3px 8px;
+    border-radius: 10px;
+    font-size: 9px;
+}
+
+
+/* =========================
+   SAVED DATE
+========================= */
+
+.saved-date {
+    width: 145px;
+    min-width: 145px;
+    height: 60px;
+    border-left: 1px solid #E5ECFA;
+    border-right: 1px solid #E5ECFA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.bookmark-icon {
+    width: 30px;
+    height: 30px;
+    background: #EAF1FF;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2864F5;
+    font-size: 16px;
+}
+
+.saved-date p {
+    font-size: 10px;
+    color: #52627E;
+    margin-bottom: 3px;
+}
+
+.saved-date h4 {
+    font-size: 10px;
+    color: #071F4D;
+}
+
+
+/* =========================
+   JOB ACTIONS
+========================= */
+
+.job-actions {
+    width: 116px;
+    min-width: 116px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.apply-btn,
+.remove-btn {
+    height: 29px;
+    border-radius: 20px;
+    font-family: inherit;
+    font-size: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+
+.apply-btn {
+    background: #2864F5;
+    border: 1px solid #2864F5;
+    color: white;
+}
+
+.apply-btn:hover {
+    background: #174BCB;
+}
+
+.remove-btn {
+    background: white;
+    border: 1px solid #FF515B;
+    color: #FF414B;
+}
+
+.remove-btn:hover {
+    background: #FFF0F0;
+}
+
+
+/* =========================
+   PAGINATION
+========================= */
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    margin-top: 11px;
+}
+
+.pagination button {
+    width: 25px;
+    height: 25px;
+    border: 1px solid #DCE6F8;
+    background: white;
+    border-radius: 7px;
+    color: #2864F5;
+    cursor: pointer;
+    font-size: 11px;
+}
+
+.pagination .current-page {
+    background: #2864F5;
+    color: white;
+    border-color: #2864F5;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1050px) {
+
+    .sidebar {
+        width: 170px;
+        min-width: 170px;
+    }
+
+    .saved-job-card {
+        gap: 8px;
+        padding: 8px;
+    }
+
+    .company-logo {
+        width: 65px;
+        min-width: 65px;
+    }
+
+    .saved-date {
+        width: 120px;
+        min-width: 120px;
+    }
+
+    .job-actions {
+        width: 100px;
+        min-width: 100px;
+    }
+}
+
+
+@media (max-width: 800px) {
+
+    .sidebar {
+        display: none;
+    }
+
+    .saved-job-card {
+        flex-wrap: wrap;
+    }
+
+    .saved-date {
+        border-right: none;
+    }
+
+}
+
+
+@media (max-width: 550px) {
+
+    .filter-section {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .saved-banner {
+        height: 85px;
+    }
+
+    .saved-job-card {
+        padding: 10px;
+    }
+
+    .job-details {
+        min-width: 150px;
+    }
+
+    .saved-content {
+        padding: 8px;
+    }
+
+}

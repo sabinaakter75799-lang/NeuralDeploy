@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications - CareerConnect</title>
+
+    <link rel="stylesheet" href="notification.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <img src="images/sidelogo.png" alt="Logo">
+            <h2>Career<span>Connect</span></h2>
+        </div>
+
+        <nav class="sidebar-menu">
+
+            <a href="#">
+                <i class="fa-solid fa-house"></i>
+                Dashboard
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                Job Search
+            </a>
+
+            <a href="#">
+                <i class="fa-regular fa-file-lines"></i>
+                My Applications
+            </a>
+
+            <a href="#">
+                <i class="fa-regular fa-folder"></i>
+                CV Builder
+            </a>
+
+            <a href="#">
+                <i class="fa-regular fa-user"></i>
+                My Profile
+            </a>
+
+            <a href="#" class="active">
+                <i class="fa-solid fa-bell"></i>
+                Notifications
+                <span class="menu-badge">3</span>
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-gear"></i>
+                Settings
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                Logout
+            </a>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+            <img src="images/sidebottom.png" alt="Career Promotion">
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN AREA -->
+    <main class="main-area">
+
+        <!-- NAVBAR -->
+        <header class="navbar">
+
+            <div></div>
+
+            <div class="nav-right">
+
+                <div class="notification">
+                    <i class="fa-regular fa-bell"></i>
+                    <span class="notification-count">3</span>
+                </div>
+
+                <div class="profile">
+
+                    <img src="images/profileavatar.png" alt="Profile">
+
+                    <div>
+                        <h4>Aronno Dey</h4>
+                        <p>Student</p>
+                    </div>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- PAGE CONTENT -->
+        <section class="content">
+
+            <!-- NOTIFICATION BANNER -->
+            <div class="notification-banner">
+
+                <div class="banner-icon">
+                    <i class="fa-solid fa-bell"></i>
+                </div>
+
+                <div class="banner-text">
+                    <h1>Notifications</h1>
+                    <p>Stay updated with the latest activities and updates.</p>
+                </div>
+
+                <img src="images/notificationillus.png"
+                     class="banner-image"
+                     alt="Notification Illustration">
+
+            </div>
+
+
+            <!-- FILTER TABS -->
+            <div class="filter-tabs">
+
+                <div class="tabs">
+
+                    <button class="tab active">
+                        <i class="fa-solid fa-bell"></i>
+                        All (6)
+                    </button>
+
+                    <button class="tab">
+                        <i class="fa-solid fa-briefcase"></i>
+                        Applications (3)
+                    </button>
+
+                    <button class="tab">
+                        <i class="fa-solid fa-gear"></i>
+                        System (2)
+                    </button>
+
+                    <button class="tab">
+                        <i class="fa-solid fa-star"></i>
+                        Updates (1)
+                    </button>
+
+                </div>
+
+                <button class="mark-read">
+                    <i class="fa-solid fa-check"></i>
+                    Mark All as Read
+                </button>
+
+            </div>
+
+
+            <!-- MAIN NOTIFICATION LAYOUT -->
+            <div class="notification-layout">
+
+                <!-- LEFT NOTIFICATION LIST -->
+                <div class="notification-list">
+
+
+                    <!-- CARD 1 -->
+                    <div class="notification-card unread">
+
+                        <div class="notification-icon green">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+
+                        <div class="notification-details">
+
+                            <h3>Application Confirmed</h3>
+
+                            <p>
+                                Your application for Frontend Developer Intern at Google
+                                has been successfully submitted.
+                            </p>
+
+                            <span class="notification-time">
+                                <i class="fa-regular fa-clock"></i>
+                                Nov 18, 2026 · 10:24 AM
+                            </span>
+
+                        </div>
+
+                        <span class="category application">
+                            <i class="fa-solid fa-circle"></i>
+                            Application
+                        </span>
+
+                        <i class="fa-solid fa-chevron-right arrow"></i>
+
+                    </div>
+
+
+                    <!-- CARD 2 -->
+                    <div class="notification-card">
+
+                        <div class="notification-icon blue">
+                            <i class="fa-solid fa-briefcase"></i>
+                        </div>
+
+                        <div class="notification-details">
+
+                            <h3>New Job Posted</h3>
+
+                            <p>
+                                Microsoft has posted a new job: Software Engineer Intern.
+                            </p>
+
+                            <span class="notification-time">
+                                <i class="fa-regular fa-clock"></i>
+                                Nov 17, 2026 · 04:32 PM
+                            </span>
+
+                        </div>
+
+                        <span class="category job">
+                            <i class="fa-solid fa-circle"></i>
+                            Job
+                        </span>
+
+                        <i class="fa-solid fa-chevron-right arrow"></i>
+
+                    </div>
+
+
+                    <!-- CARD 3 -->
+                    <div class="notification-card">
+
+                        <div class="notification-icon blue">
+                            <i class="fa-solid fa-info"></i>
+                        </div>
+
+                        <div class="notification-details">
+
+                            <h3>System Update</h3>
+
+                            <p>
+                                Our platform will undergo maintenance on Nov 20, 2026
+                                from 2:00 AM to 4:00 AM.
+                            </p>
+
+                            <span class="notification-time">
+                                <i class="fa-regular fa-clock"></i>
+                                Nov 18, 2026 · 09:15 PM
+                            </span>
+
+                        </div>
+
+                        <span class="category system">
+                            <i class="fa-solid fa-circle"></i>
+                            System
+                        </span>
+
+                        <i class="fa-solid fa-chevron-right arrow"></i>
+
+                    </div>
+
+
+                    <!-- CARD 4 -->
+                    <div class="notification-card">
+
+                        <div class="notification-icon purple">
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+                        <div class="notification-details">
+
+                            <h3>Saved Job Reminder</h3>
+
+                            <p>Don't forget to check out your saved jobs!</p>
+
+                            <span class="notification-time">
+                                <i class="fa-regular fa-clock"></i>
+                                Nov 15, 2026 · 01:20 PM
+                            </span>
+
+                        </div>
+
+                        <span class="category update">
+                            <i class="fa-solid fa-circle"></i>
+                            Update
+                        </span>
+
+                        <i class="fa-solid fa-chevron-right arrow"></i>
+
+                    </div>
+
+
+                    <!-- CARD 5 -->
+                    <div class="notification-card">
+
+                        <div class="notification-icon green">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+
+                        <div class="notification-details">
+
+                            <h3>Welcome to CareerConnect</h3>
+
+                            <p>
+                                Thanks for joining CareerConnect! Start exploring jobs now.
+                            </p>
+
+                            <span class="notification-time">
+                                <i class="fa-regular fa-clock"></i>
+                                Nov 14, 2026 · 11:45 AM
+                            </span>
+
+                        </div>
+
+                        <span class="category update">
+                            <i class="fa-solid fa-circle"></i>
+                            Update
+                        </span>
+
+                        <i class="fa-solid fa-chevron-right arrow"></i>
+
+                    </div>
+
+                </div>
+
+
+                <!-- RIGHT PANEL -->
+                <div class="right-panel">
+
+                    <!-- FILTER CARD -->
+                    <div class="filter-card">
+
+                        <h3>
+                            <i class="fa-solid fa-filter"></i>
+                            Filter Notifications
+                        </h3>
+
+                        <label class="filter-option">
+                            <input type="radio" name="filter" checked>
+                            <span>All Notifications</span>
+                        </label>
+
+                        <label class="filter-option">
+                            <input type="radio" name="filter">
+                            <span>Applications</span>
+                        </label>
+
+                        <label class="filter-option">
+                            <input type="radio" name="filter">
+                            <span>System Updates</span>
+                        </label>
+
+                        <label class="filter-option">
+                            <input type="radio" name="filter">
+                            <span>Job Alerts</span>
+                        </label>
+
+                        <label class="filter-option">
+                            <input type="radio" name="filter">
+                            <span>General Updates</span>
+                        </label>
+
+                        <div class="sort-section">
+
+                            <h3>
+                                <i class="fa-regular fa-calendar-days"></i>
+                                Sort By
+                            </h3>
+
+                            <select>
+                                <option>Newest First</option>
+                                <option>Oldest First</option>
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- EMPTY NOTIFICATION CARD -->
+                    <div class="empty-card">
+
+                        <i class="fa-regular fa-bell empty-icon"></i>
+
+                        <h3>You're all caught up!</h3>
+
+                        <p>No new notifications right now.</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+</html>

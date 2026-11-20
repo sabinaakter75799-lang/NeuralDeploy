@@ -1,0 +1,568 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #eff6ff;
+    color: #183b69;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* ================= SIDEBAR ================= */
+
+.sidebar {
+    width: 173px;
+    min-width: 173px;
+    min-height: 100vh;
+    background: #08214e;
+    color: white;
+    padding: 14px 10px;
+    position: relative;
+}
+
+
+/* Logo */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 39px;
+    padding-left: 3px;
+}
+
+.logo img {
+    width: 26px;
+    height: 26px;
+    object-fit: contain;
+}
+
+.logo h2 {
+    font-size: 16px;
+    color: white;
+    white-space: nowrap;
+}
+
+.logo h2 span {
+    color: #2870ed;
+}
+
+
+/* Sidebar Menu */
+
+.sidebar-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.sidebar-menu a {
+    min-height: 32px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 8px 14px;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    border-radius: 9px;
+    position: relative;
+}
+
+.sidebar-menu a i {
+    font-size: 14px;
+    width: 17px;
+}
+
+.sidebar-menu a.active {
+    background: #2463eb;
+}
+
+.sidebar-menu a:hover {
+    background: #17417e;
+}
+
+.sidebar-menu a.active:hover {
+    background: #2463eb;
+}
+
+
+/* Notification Badge */
+
+.notification-count {
+    position: absolute;
+    right: 3px;
+    background: #f04444;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 9px;
+    line-height: 13px;
+}
+
+
+/* Promotional Card */
+
+.promo-card {
+    margin-top: 49px;
+    width: 100%;
+    height: 180px;
+    border-radius: 11px;
+    overflow: hidden;
+}
+
+.promo-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* ================= MAIN AREA ================= */
+
+.main-area {
+    flex: 1;
+    min-width: 0;
+    background: #eff6ff;
+}
+
+
+/* Top Navbar */
+
+.top-navbar {
+    height: 60px;
+    border: 1px solid #d9e2f0;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 25px;
+}
+
+.top-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.notification {
+    position: relative;
+    font-size: 18px;
+    padding-right: 15px;
+    border-right: 1px solid #e0e5ed;
+}
+
+.notification span {
+    position: absolute;
+    top: -8px;
+    right: 5px;
+    background: #ed323b;
+    color: white;
+    width: 14px;
+    height: 14px;
+    font-size: 9px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Profile */
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.profile img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile h4 {
+    font-size: 10px;
+    color: #173761;
+}
+
+.profile p {
+    font-size: 9px;
+    margin-top: 4px;
+    color: #637895;
+}
+
+.profile > i {
+    font-size: 10px;
+    margin-left: 12px;
+}
+
+
+/* ================= CONTENT ================= */
+
+.content {
+    padding: 27px 25px 30px;
+}
+
+
+/* Page Heading */
+
+.page-heading {
+    margin-bottom: 19px;
+}
+
+.page-heading h1 {
+    font-size: 20px;
+    margin-bottom: 9px;
+}
+
+.page-heading p {
+    font-size: 9px;
+    line-height: 13px;
+    color: #71829e;
+}
+
+
+/* ================= SEARCH BOX ================= */
+
+.search-box {
+    height: 30px;
+    background: white;
+    border: 1px solid #dce7f5;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    gap: 15px;
+    margin-bottom: 28px;
+}
+
+.search-box i {
+    font-size: 12px;
+    color: #333;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 9px;
+    color: #183b69;
+}
+
+.search-box input::placeholder {
+    color: #647895;
+    font-weight: 600;
+}
+
+
+/* ================= RESOURCE GRID ================= */
+
+.resource-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px 20px;
+}
+
+
+/* Resource Card */
+
+.resource-card {
+    min-height: 123px;
+    background: white;
+    border: 1px solid #dce7f5;
+    border-radius: 9px;
+    padding: 14px 17px;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    position: relative;
+}
+
+
+/* Resource Icons */
+
+.resource-icon {
+    width: 49px;
+    height: 49px;
+    min-width: 49px;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+}
+
+.resume-icon {
+    background: #dceaff;
+    color: #3288ff;
+}
+
+.interview-icon {
+    background: #d1fae5;
+    color: #111;
+}
+
+.planning-icon {
+    background: #fff2c7;
+    color: #e58a00;
+}
+
+.communication-icon {
+    background: #f1e5ff;
+    color: #a855f7;
+}
+
+
+/* Resource Information */
+
+.resource-info {
+    flex: 1;
+    padding-right: 10px;
+}
+
+.resource-info h3 {
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.resource-info p {
+    font-size: 10px;
+    color: #657895;
+    line-height: 13px;
+    margin-bottom: 10px;
+}
+
+
+/* Resource Badges */
+
+.resource-badge {
+    display: inline-block;
+    font-size: 8px;
+    padding: 4px 9px;
+    border-radius: 12px;
+}
+
+.blue-badge {
+    background: #dceaff;
+    color: #1670e8;
+}
+
+.green-badge {
+    background: #d1fae5;
+    color: #059669;
+}
+
+.yellow-badge {
+    background: #fff0c2;
+    color: #d97706;
+}
+
+.purple-badge {
+    background: #f1e5ff;
+    color: #9333ea;
+}
+
+
+/* Arrow Button */
+
+.arrow-btn {
+    position: absolute;
+    right: 19px;
+    top: 10px;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #e1ebfa;
+    border-radius: 50%;
+    background: white;
+    color: #173b68;
+    font-size: 9px;
+    cursor: pointer;
+}
+
+.arrow-btn:hover {
+    background: #eff6ff;
+}
+
+
+/* ================= POPULAR RESOURCES ================= */
+
+.popular-section {
+    margin-top: 22px;
+}
+
+.popular-section h2 {
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+
+.popular-subtitle {
+    font-size: 9px;
+    color: #71829e;
+    margin-bottom: 12px;
+}
+
+
+/* Popular List */
+
+.popular-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+
+/* Popular Item */
+
+.popular-item {
+    min-height: 40px;
+    background: white;
+    border: 1px solid #dce7f5;
+    border-radius: 7px;
+    padding: 6px 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+/* Small Icons */
+
+.popular-icon {
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    font-size: 11px;
+}
+
+.blue-small {
+    background: #dceaff;
+    color: #3288ff;
+}
+
+.green-small {
+    background: #d1fae5;
+    color: #10b981;
+}
+
+.yellow-small {
+    background: #fff2c7;
+    color: #e59a00;
+}
+
+.purple-small {
+    background: #f1e5ff;
+    color: #a855f7;
+}
+
+
+/* Popular Information */
+
+.popular-info {
+    flex: 1;
+}
+
+.popular-info h4 {
+    font-size: 9px;
+    margin-bottom: 3px;
+}
+
+.popular-info p {
+    font-size: 8px;
+    color: #657895;
+}
+
+
+/* Read More */
+
+.popular-item a {
+    color: #0066ff;
+    text-decoration: none;
+    font-size: 8px;
+    white-space: nowrap;
+}
+
+.popular-item a i {
+    font-size: 7px;
+    margin-left: 3px;
+}
+
+.popular-item a:hover {
+    text-decoration: underline;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+
+    .sidebar {
+        width: 155px;
+        min-width: 155px;
+    }
+
+    .content {
+        padding: 25px 15px;
+    }
+
+    .resource-grid {
+        gap: 15px;
+    }
+
+    .resource-card {
+        gap: 12px;
+        padding: 12px;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .container {
+        padding: 0;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .content {
+        padding: 20px 12px;
+    }
+
+    .resource-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .popular-item {
+        padding: 8px;
+        gap: 8px;
+    }
+
+    .popular-info p {
+        line-height: 12px;
+    }
+
+}

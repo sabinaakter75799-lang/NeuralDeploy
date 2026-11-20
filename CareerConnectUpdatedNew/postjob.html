@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post a Job - CareerConnect</title>
+
+    <link rel="stylesheet" href="postjob.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <img src="images/sidelogo.png" alt="Logo">
+            <h2>Career<span>Connect</span></h2>
+        </div>
+
+        <nav class="sidebar-menu">
+
+            <a href="#">
+                <i class="fa-solid fa-house"></i>
+                Dashboard
+            </a>
+
+            <a href="#" class="active">
+                <i class="fa-solid fa-plus"></i>
+                Post a Job
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-briefcase"></i>
+                Manage Jobs
+            </a>
+
+            <a href="#">
+                <i class="fa-regular fa-user"></i>
+                Applicants
+            </a>
+
+            <a href="#">
+                <i class="fa-regular fa-star"></i>
+                Shortlisted Candidates
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-bell"></i>
+                Notifications
+                <span class="menu-badge">3</span>
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-gear"></i>
+                Settings
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                Logout
+            </a>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+            <img src="images/sidebottom.png" alt="Career Promotion">
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN AREA -->
+    <main class="main-area">
+
+        <!-- NAVBAR -->
+        <header class="navbar">
+
+            <div></div>
+
+            <div class="nav-right">
+
+                <div class="notification">
+                    <i class="fa-regular fa-bell"></i>
+                    <span class="notification-count">3</span>
+                </div>
+
+                <div class="profile">
+
+                    <img src="images/employee.png" alt="Profile">
+
+                    <div>
+                        <h4>Antu Roy</h4>
+                        <p>Student</p>
+                    </div>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- CONTENT -->
+        <section class="content">
+
+            <!-- PAGE HEADING -->
+            <div class="page-heading">
+
+                <div class="heading-icon">
+                    <i class="fa-solid fa-briefcase"></i>
+                </div>
+
+                <div>
+                    <h1>Post a Job</h1>
+                    <p>Find the right talent for your company</p>
+                </div>
+
+            </div>
+
+
+            <!-- MAIN LAYOUT -->
+            <div class="post-layout">
+
+                <!-- LEFT FORM -->
+                <div class="job-form-card">
+
+                    <h2 class="section-title">
+                        <i class="fa-solid fa-briefcase"></i>
+                        Job Information
+                    </h2>
+
+
+                    <form>
+
+                        <!-- JOB TITLE AND TYPE -->
+                        <div class="form-row">
+
+                            <div class="form-group">
+                                <label>Job Title <span>*</span></label>
+
+                                <input type="text"
+                                placeholder="e.g. Frontend Developer">
+                            </div>
+
+                            <div class="form-group">
+                                <label>Job Type <span>*</span></label>
+
+                                <div class="input-icon">
+                                    <i class="fa-solid fa-briefcase"></i>
+
+                                    <select>
+                                        <option>Full Time</option>
+                                        <option>Part Time</option>
+                                        <option>Internship</option>
+                                        <option>Remote</option>
+                                        <option>Contract</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <!-- CATEGORY AND EXPERIENCE -->
+                        <div class="form-row">
+
+                            <div class="form-group">
+                                <label>Category <span>*</span></label>
+
+                                <div class="input-icon">
+                                    <i class="fa-solid fa-grip"></i>
+
+                                    <select>
+                                        <option>Select Category</option>
+                                        <option>Web Development</option>
+                                        <option>Graphic Design</option>
+                                        <option>Marketing</option>
+                                        <option>Software Engineering</option>
+                                        <option>Data Science</option>
+                                    </select>
+                                </div>
+                            </div>
+
+
+                            <div class="form-group">
+                                <label>Experience Level <span>*</span></label>
+
+                                <div class="input-icon">
+                                    <i class="fa-solid fa-chart-simple"></i>
+
+                                    <select>
+                                        <option>Select Experience</option>
+                                        <option>Fresher</option>
+                                        <option>Entry Level</option>
+                                        <option>1-2 Years</option>
+                                        <option>3-5 Years</option>
+                                        <option>5+ Years</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <!-- LOCATION AND SALARY -->
+                        <div class="form-row">
+
+                            <div class="form-group">
+                                <label>Location <span>*</span></label>
+
+                                <div class="input-icon">
+                                    <i class="fa-solid fa-location-dot"></i>
+
+                                    <input type="text"
+                                    placeholder="e.g. Dhaka, Bangladesh">
+                                </div>
+                            </div>
+
+
+                            <div class="form-group">
+                                <label>Salary Range <small>(Optional)</small></label>
+
+                                <div class="input-icon">
+                                    <i class="fa-solid fa-dollar-sign"></i>
+
+                                    <input type="text"
+                                    placeholder="e.g. 50,000 – 80,000 BDT">
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <!-- JOB DESCRIPTION -->
+                        <div class="form-group description-group">
+
+                            <label>Job Description <span>*</span></label>
+
+                            <div class="textarea-box">
+
+                                <i class="fa-solid fa-file-lines"></i>
+
+                                <textarea maxlength="2000"
+                                placeholder="Describe the role, responsibilities and requirements..."></textarea>
+
+                                <span class="character-count">0/2000</span>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- REQUIREMENTS -->
+                        <div class="requirements-section">
+
+                            <h3>
+                                <i class="fa-solid fa-clipboard-list"></i>
+                                Requirements
+                            </h3>
+
+                            <p>Add the key skills and qualifications for this role.</p>
+
+                            <div class="requirement-row">
+
+                                <input type="text"
+                                placeholder="e.g. React, JavaScript, Communication Skills">
+
+                                <button type="button" class="add-more">
+                                    <i class="fa-solid fa-plus"></i>
+                                    Add More
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- BUTTONS -->
+                        <div class="form-buttons">
+
+                            <button type="reset" class="reset-btn">
+                                <i class="fa-solid fa-rotate"></i>
+                                Reset
+                            </button>
+
+                            <button type="submit" class="post-btn">
+                                <i class="fa-solid fa-paper-plane"></i>
+                                Post Job
+                            </button>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+
+                <!-- RIGHT SIDE -->
+                <div class="right-content">
+
+                    <!-- ILLUSTRATION -->
+                    <div class="illustration-card">
+
+                        <img src="images/postjobillustration.png"
+                        alt="Post a Job Illustration">
+
+                    </div>
+
+
+                    <!-- WHY POST A JOB -->
+                    <div class="why-card">
+
+                        <h2>
+                            <i class="fa-solid fa-star"></i>
+                            Why Post a Job?
+                        </h2>
+
+
+                        <div class="why-item">
+
+                            <div class="why-icon">
+                                <i class="fa-solid fa-users"></i>
+                            </div>
+
+                            <div>
+                                <h3>Access to Top Talent</h3>
+                                <p>Reach skilled and motivated candidates.</p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="why-item">
+
+                            <div class="why-icon">
+                                <i class="fa-solid fa-bolt"></i>
+                            </div>
+
+                            <div>
+                                <h3>Easy & Fast Process</h3>
+                                <p>Post your job in just a few clicks.</p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="why-item">
+
+                            <div class="why-icon">
+                                <i class="fa-solid fa-handshake"></i>
+                            </div>
+
+                            <div>
+                                <h3>Build Your Team</h3>
+                                <p>Find the perfect fit for your organization.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+</html>
